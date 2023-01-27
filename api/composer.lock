@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "api-platform/core",
-            "version": "v2.7.7",
+            "version": "v2.7.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/core.git",
-                "reference": "67dcf62518d0ac14a99ddccb149a5891b9526104"
+                "reference": "dc11c7322ba47bb722e963e811face7265bae5e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/core/zipball/67dcf62518d0ac14a99ddccb149a5891b9526104",
-                "reference": "67dcf62518d0ac14a99ddccb149a5891b9526104",
+                "url": "https://api.github.com/repos/api-platform/core/zipball/dc11c7322ba47bb722e963e811face7265bae5e6",
+                "reference": "dc11c7322ba47bb722e963e811face7265bae5e6",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
             ],
             "support": {
                 "issues": "https://github.com/api-platform/core/issues",
-                "source": "https://github.com/api-platform/core/tree/v2.7.7"
+                "source": "https://github.com/api-platform/core/tree/v2.7.8"
             },
             "funding": [
                 {
@@ -173,7 +173,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-23T15:18:02+00:00"
+            "time": "2023-01-27T09:28:22+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -3424,28 +3424,28 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v2.2.4",
+            "version": "v1.19.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "52baff1adb29faf443c6710cb775bd88b9627381"
+                "reference": "c82477240111bfe41a1067c9f0ab91d40bafa5b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/52baff1adb29faf443c6710cb775bd88b9627381",
-                "reference": "52baff1adb29faf443c6710cb775bd88b9627381",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/c82477240111bfe41a1067c9f0ab91d40bafa5b6",
+                "reference": "c82477240111bfe41a1067c9f0ab91d40bafa5b6",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^2.1",
-                "php": ">=8.0"
+                "composer-plugin-api": "^1.0|^2.0",
+                "php": ">=7.1"
             },
             "require-dev": {
-                "composer/composer": "^2.1",
-                "symfony/dotenv": "^5.4|^6.0",
-                "symfony/filesystem": "^5.4|^6.0",
-                "symfony/phpunit-bridge": "^5.4|^6.0",
-                "symfony/process": "^5.4|^6.0"
+                "composer/composer": "^1.0.2|^2.0",
+                "symfony/dotenv": "^4.4|^5.0|^6.0",
+                "symfony/filesystem": "^4.4|^5.0|^6.0",
+                "symfony/phpunit-bridge": "^4.4.12|^5.0|^6.0",
+                "symfony/process": "^4.4|^5.0|^6.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -3469,7 +3469,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v2.2.4"
+                "source": "https://github.com/symfony/flex/tree/v1.19.4"
             },
             "funding": [
                 {
@@ -3485,7 +3485,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-20T07:19:39+00:00"
+            "time": "2022-12-20T07:19:24+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -6408,5 +6408,5 @@
         "ext-iconv": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.0.0"
 }

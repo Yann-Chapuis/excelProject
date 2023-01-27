@@ -1,11 +1,11 @@
-version: '3'
+version: "3"
 services:
   db:
     image: mysql:5
     ports:
       - "3307:3306"
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     volumes:
       - ./data:/var/lib/mysql
 
@@ -15,8 +15,30 @@ services:
       - "9999:80"
 
   php:
-    build: .
+    build: ./docker/php
     ports:
-      - "8080:80"
+      - "8888:80"
     volumes:
-      - ./api:/var/www
+      - ./api:/var/www/back
+
+  nginx:
+    build: ./docker/nginx
+    ports:
+      - "80:80"
+      - "8080:8080"
+    environment:
+      APP_ENV: prod
+    links:
+      - php
+    volumes:
+      - ./logs/nginx:/var/log/nginx:cached
+      - ./api:/var/www/back
+      - ./front/dist:/var/www/front
+
+  node:
+    build: ./docker/node
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./front:/var/www/front:cached
+      - /var/www/front/node_modules/
