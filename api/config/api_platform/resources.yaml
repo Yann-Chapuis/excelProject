@@ -1,0 +1,5 @@
+resources:
+  App\Entity\ExcelFile:
+    - operations:
+        ApiPlatform\Metadata\GetCollection: ~
+        ApiPlatform\Metadata\Get: ~
